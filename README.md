@@ -16,9 +16,10 @@ O site está publicado e pode ser acessado na internet através do link:
 ## 🚀 Principais Recursos
 
 - **Persistência de Preferências**: Seleção de Tema (Claro/Escuro) e Tipografia (Sans/Mono) persistidas de forma segura no `localStorage` do navegador para manter a escolha do usuário entre sessões.
-- **Background Generativo Interativo**: Tela de fundo animada renderizada programaticamente via HTML5 Canvas 2D, com algoritmos de colisão elástica e atração de partículas que reagem dinamicamente à movimentação e presença do cursor do mouse.
-- **Validação de Formulário**: Validação robusta de e-mail (por expressão regular baseada na especificação RFC 5322) e campos obrigatórios no frontend, integrada a um Modal interativo de feedback de sucesso.
+- **Background Generativo Interativo**: Tela de fundo animada renderizada programaticamente via HTML5 Canvas 2D, com algoritmos de colisão elástica e atração de partículas que reagem dinamicamente à movimentação e presença do cursor do mouse. A animação pausa automaticamente quando a aba não está visível, economizando CPU/bateria.
+- **Validação de Formulário**: Validação de campos obrigatórios e formato de e-mail no frontend, com feedback visual e acessível (via `aria-describedby`) por campo. Ao validar com sucesso, o formulário abre o cliente de e-mail do visitante com a mensagem pronta para `victor1308pro@gmail.com`.
 - **Design Minimalista & Responsivo**: Layout grid fluido contornado por uma moldura fina de 1px, inspirado na estética geométrica contemporânea, perfeitamente adaptado para dispositivos móveis, tablets e monitores de alta resolução (desktops).
+- **SEO básico**: `robots.txt`, `sitemap.xml`, favicon e meta tags Open Graph em todas as páginas.
 
 ---
 
@@ -33,16 +34,19 @@ O site está publicado e pode ser acessado na internet através do link:
 ## 📂 Estrutura de Arquivos
 
 ```bash
-├── index.html         # Redirecionador automático de entrada
-├── sobre.html         # Página principal de apresentação pessoal
+├── index.html         # Página principal de apresentação pessoal (entrada do site)
+├── sobre.html         # Redirecionador para index.html (mantido por compatibilidade com links antigos)
 ├── formacao.html      # Histórico de carreira, certificações e idiomas
 ├── portfolio.html     # Vitrine de repositórios do GitHub
 ├── contato.html       # Formulário de mensagens e modal de sucesso
+├── robots.txt         # Diretivas de rastreamento para buscadores
+├── sitemap.xml        # Mapa do site para indexação
 ├── css/
 │   └── style.css      # Folha de estilos centralizada e variáveis de temas
 ├── js/
 │   ├── app.js         # Inicializador de preferências e animação em Canvas
-│   └── contato.js     # Lógica de validação do formulário e controle do modal
+│   ├── contato.js     # Lógica de validação do formulário e controle do modal
+│   └── partials.js    # Injeta o header/navegação compartilhado entre as páginas
 └── prints/            # Capturas de tela do sistema em produção
 ```
 
@@ -61,7 +65,7 @@ Para rodar o projeto localmente em sua máquina, basta clonar o repositório e a
    cd portifolio-victor-oliveira
    ```
 3. **Executar**:
-   Basta dar duplo clique no arquivo `sobre.html` (ou usar uma extensão de servidor local do VS Code como a *Live Server*).
+   Basta dar duplo clique no arquivo `index.html` (ou usar uma extensão de servidor local do VS Code como a *Live Server*).
 
 ---
 

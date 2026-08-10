@@ -1,14 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="theme-light font-sans">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=sobre.html">
-    <title>Victor Oliveira - Portfólio</title>
-    <script type="text/javascript">
-        window.location.href = "sobre.html";
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Hugo Oliveira — Portfólio Pessoal & Acadêmico</title>
+  <meta name="description" content="Portfólio pessoal e acadêmico de Victor Hugo Costa Silva De Oliveira. Conheça meu perfil, habilidades, formação e experiências.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23151515'/%3E%3Ctext x='50' y='68' font-family='Arial,Helvetica,sans-serif' font-size='50' font-weight='800' fill='white' text-anchor='middle'%3EVH%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Victor Hugo Oliveira — Portfólio Pessoal & Acadêmico">
+  <meta property="og:description" content="Portfólio pessoal e acadêmico de Victor Hugo Costa Silva De Oliveira. Conheça meu perfil, habilidades, formação e experiências.">
+  <meta property="og:url" content="https://victor1308code.github.io/portifolio-victor-oliveira/">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <p>Redirecionando para <a href="sobre.html">sobre.html</a>...</p>
+<body class="theme-light font-sans" data-page="sobre">
+
+  <!-- Fundo animado em Canvas, decorativo (aria-hidden), controlado por js/app.js -->
+  <canvas id="canvas-bg" aria-hidden="true"></canvas>
+
+  <!-- Moldura fina de 1px ao redor da página, puramente visual -->
+  <div class="site-frame">
+    <div class="frame-line frame-top"></div>
+    <div class="frame-line frame-right"></div>
+    <div class="frame-line frame-bottom"></div>
+    <div class="frame-line frame-left"></div>
+  </div>
+
+  <div class="app-container">
+    <!-- Header/menu injetado pelo js/partials.js, compartilhado entre as 4 páginas -->
+    <div id="site-header-placeholder"></div>
+    <script src="js/partials.js"></script>
+
+    <main class="main-content">
+      <section id="sobre">
+        <h2 class="section-title">Sobre Mim</h2>
+
+        <div class="intro-text">
+          <p>
+            Olá! Sou <strong>Victor Hugo Costa Silva De Oliveira</strong>.
+            Atuo como <strong>Assessor de TIC</strong> em órgão público e sou graduando em <strong>Análise e Desenvolvimento de Sistemas</strong>.
+            Combino experiência prática em suporte técnico corporativo e desenvolvimento frontend (Angular) com estudo constante
+            dos modernos conceitos de arquitetura de software para entregar soluções eficientes e de alta performance.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-block">
+            <h3 class="info-label">Perfil Profissional</h3>
+            <p class="info-value">
+              Experiência com infraestrutura e suporte de tecnologia na SEAC-DF, alinhando soluções tecnológicas
+              aos objetivos organizacionais. Desenvolvedor web freelancer focado em soluções frontend responsivas e otimização de interfaces.
+            </p>
+          </div>
+
+          <div class="info-block">
+            <h3 class="info-label">Comunicação & Idiomas</h3>
+            <p class="info-value">
+              Inglês avançado e facilidade de comunicação técnica corporativa. Capacidade analítica para identificar pontos críticos,
+              gerenciar demandas de usuários e resolver problemas de hardware e software sob pressão.
+            </p>
+          </div>
+
+          <div class="info-block">
+            <h3 class="info-label">Principais Competências</h3>
+            <p class="info-value">
+              SQL e PostgreSQL &bull; Desenvolvimento Web (Angular 19) &bull; Java e JDBC &bull;
+              Suporte Técnico corporativo &bull; Segurança da Informação &bull; Redes e Configuração de TI.
+            </p>
+          </div>
+
+          <div class="info-block">
+            <h3 class="info-label">Contato Direto</h3>
+            <p class="info-value">
+              <strong>Email:</strong> victor1308pro@gmail.com<br>
+              <strong>Telefone:</strong> (61) 98127-9861<br>
+              <strong>Localidade:</strong> Distrito Federal, Brasil
+            </p>
+          </div>
+
+          <!-- Hobbies: fora do contexto profissional, para humanizar a apresentação -->
+          <div class="info-block">
+            <h3 class="info-label">Hobbies & Interesses</h3>
+            <p class="info-value">
+              Leitura de livros épicos e de fantasia (Senhor dos Anéis é uma referência favorita),
+              aquarismo e video games nas horas livres.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 40px; display: flex; gap: 15px; flex-wrap: wrap;">
+          <a href="mailto:victor1308pro@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Curr%C3%ADculo&body=Ol%C3%A1%20Victor%2C%20poderia%20me%20enviar%20seu%20curr%C3%ADculo%20em%20PDF%3F" class="btn-action">Solicitar Currículo</a>
+          <a href="https://github.com/victor1308code" target="_blank" rel="noopener" class="btn-action">GitHub</a>
+          <a href="https://linkedin.com/in/victoroliveira1308" target="_blank" rel="noopener" class="btn-action">LinkedIn</a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Victor Hugo. Feito com HTML, CSS e JS puros.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

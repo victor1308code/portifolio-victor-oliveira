@@ -52,15 +52,15 @@ function initStylePreferences() {
       rootElement.classList.add('theme-dark');
       bodyElement.classList.remove('theme-light');
       bodyElement.classList.add('theme-dark');
-      if (btnThemeDark) btnThemeDark.classList.add('active');
-      if (btnThemeLight) btnThemeLight.classList.remove('active');
+      if (btnThemeDark) { btnThemeDark.classList.add('active'); btnThemeDark.setAttribute('aria-pressed', 'true'); }
+      if (btnThemeLight) { btnThemeLight.classList.remove('active'); btnThemeLight.setAttribute('aria-pressed', 'false'); }
     } else {
       rootElement.classList.remove('theme-dark');
       rootElement.classList.add('theme-light');
       bodyElement.classList.remove('theme-dark');
       bodyElement.classList.add('theme-light');
-      if (btnThemeLight) btnThemeLight.classList.add('active');
-      if (btnThemeDark) btnThemeDark.classList.remove('active');
+      if (btnThemeLight) { btnThemeLight.classList.add('active'); btnThemeLight.setAttribute('aria-pressed', 'true'); }
+      if (btnThemeDark) { btnThemeDark.classList.remove('active'); btnThemeDark.setAttribute('aria-pressed', 'false'); }
     }
     safeSetLocalStorage('portfolio-theme', theme);
   }
@@ -84,15 +84,15 @@ function initStylePreferences() {
       rootElement.classList.add('font-mono');
       bodyElement.classList.remove('font-sans');
       bodyElement.classList.add('font-mono');
-      if (btnFontMono) btnFontMono.classList.add('active');
-      if (btnFontSans) btnFontSans.classList.remove('active');
+      if (btnFontMono) { btnFontMono.classList.add('active'); btnFontMono.setAttribute('aria-pressed', 'true'); }
+      if (btnFontSans) { btnFontSans.classList.remove('active'); btnFontSans.setAttribute('aria-pressed', 'false'); }
     } else {
       rootElement.classList.remove('font-mono');
       rootElement.classList.add('font-sans');
       bodyElement.classList.remove('font-mono');
       bodyElement.classList.add('font-sans');
-      if (btnFontSans) btnFontSans.classList.add('active');
-      if (btnFontMono) btnFontMono.classList.remove('active');
+      if (btnFontSans) { btnFontSans.classList.add('active'); btnFontSans.setAttribute('aria-pressed', 'true'); }
+      if (btnFontMono) { btnFontMono.classList.remove('active'); btnFontMono.setAttribute('aria-pressed', 'false'); }
     }
     safeSetLocalStorage('portfolio-font', fontStyle);
   }
@@ -247,6 +247,15 @@ function initCanvasBackground() {
     cancelAnimationFrame(animationFrameId);
     resizeCanvas();
     animate();
+  });
+
+  // Pausa a animação quando a aba não está visível, evitando gasto de CPU/bateria à toa
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      cancelAnimationFrame(animationFrameId);
+    } else {
+      animate();
+    }
   });
 
   resizeCanvas();

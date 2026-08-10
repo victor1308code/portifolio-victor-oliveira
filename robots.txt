@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://victor1308code.github.io/portifolio-victor-oliveira/sitemap.xml

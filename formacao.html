@@ -5,12 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formação & Carreira — Victor Hugo Oliveira</title>
   <meta name="description" content="Histórico acadêmico, experiências profissionais, certificações e idiomas de Victor Hugo Costa Silva De Oliveira.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23151515'/%3E%3Ctext x='50' y='68' font-family='Arial,Helvetica,sans-serif' font-size='50' font-weight='800' fill='white' text-anchor='middle'%3EVH%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Formação & Carreira — Victor Hugo Oliveira">
+  <meta property="og:description" content="Histórico acadêmico, experiências profissionais, certificações e idiomas de Victor Hugo Costa Silva De Oliveira.">
+  <meta property="og:url" content="https://victor1308code.github.io/portifolio-victor-oliveira/formacao.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="theme-light font-sans">
+<body class="theme-light font-sans" data-page="formacao">
 
-  <canvas id="canvas-bg"></canvas>
+  <!-- Fundo animado em Canvas, decorativo (aria-hidden), controlado por js/app.js -->
+  <canvas id="canvas-bg" aria-hidden="true"></canvas>
 
+  <!-- Moldura fina de 1px ao redor da página, puramente visual -->
   <div class="site-frame">
     <div class="frame-line frame-top"></div>
     <div class="frame-line frame-right"></div>
@@ -19,60 +31,19 @@
   </div>
 
   <div class="app-container">
-    <header class="site-header">
-      <div class="header-top">
-        <h1 class="site-title">Victor Hugo</h1>
-        <p class="site-subtitle">Assessor de TIC & Estudante de ADS</p>
-        
-        <nav class="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <span class="nav-dot"></span>
-              <a href="sobre.html" class="nav-link">Sobre mim</a>
-            </li>
-            <li class="nav-item active">
-              <span class="nav-dot"></span>
-              <a href="formacao.html" class="nav-link">Formação</a>
-            </li>
-            <li class="nav-item">
-              <span class="nav-dot"></span>
-              <a href="portfolio.html" class="nav-link">Portfólio</a>
-            </li>
-            <li class="nav-item">
-              <span class="nav-dot"></span>
-              <a href="contato.html" class="nav-link">Contato</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="style-controls">
-        <div class="control-group">
-          <span class="control-label">Tema</span>
-          <div class="control-buttons">
-            <button id="theme-light" class="btn-toggle active">Claro</button>
-            <button id="theme-dark" class="btn-toggle">Escuro</button>
-          </div>
-        </div>
-        
-        <div class="control-group">
-          <span class="control-label">Tipografia</span>
-          <div class="control-buttons">
-            <button id="font-sans-btn" class="btn-toggle active">Sans</button>
-            <button id="font-mono-btn" class="btn-toggle">Mono</button>
-          </div>
-        </div>
-      </div>
-    </header>
+    <!-- Header/menu injetado pelo js/partials.js, compartilhado entre as 4 páginas -->
+    <div id="site-header-placeholder"></div>
+    <script src="js/partials.js"></script>
 
     <main class="main-content">
       <section id="formacao">
         <h2 class="section-title">Formação & Experiência</h2>
 
         <div class="info-grid">
+          <!-- Coluna esquerda: experiência profissional em ordem cronológica decrescente -->
           <div class="info-block">
             <h3 class="info-label" style="margin-bottom: 20px;">Trajetória Profissional</h3>
-            
+
             <div class="timeline">
               <div class="timeline-item">
                 <span class="timeline-marker"></span>
@@ -80,7 +51,7 @@
                 <h4 class="timeline-title">Assessor de TI e Comunicação</h4>
                 <p class="timeline-institution">Secretaria de Atendimento à Comunidade (SEAC-DF)</p>
                 <p class="timeline-desc">
-                  Avaliação de estratégias tecnológicas alinhadas aos objetivos do órgão, acompanhamento de projetos 
+                  Avaliação de estratégias tecnológicas alinhadas aos objetivos do órgão, acompanhamento de projetos
                   e suporte técnico de hardware, redes e sistemas corporativos internos para os colaboradores.
                 </p>
               </div>
@@ -91,7 +62,7 @@
                 <h4 class="timeline-title">Desenvolvedor Web (Freelancer)</h4>
                 <p class="timeline-institution">Projeto Autônomo</p>
                 <p class="timeline-desc">
-                  Desenvolvimento completo do frontend de um sistema web para agendamento de barbearia utilizando Angular, 
+                  Desenvolvimento completo do frontend de um sistema web para agendamento de barbearia utilizando Angular,
                   focado em design responsivo, usabilidade e integração de interfaces.
                 </p>
               </div>
@@ -102,16 +73,17 @@
                 <h4 class="timeline-title">Estagiário Técnico e Administrativo</h4>
                 <p class="timeline-institution">CFC (2019-2021) &bull; TJDFT (2015-2017)</p>
                 <p class="timeline-desc">
-                  Atuação em suporte técnico administrativo e de informática. Suporte de hardware e sistemas corporativos, 
+                  Atuação em suporte técnico administrativo e de informática. Suporte de hardware e sistemas corporativos,
                   manutenção e preservação de documentos digitais e atendimento ao público corporativo.
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- Coluna direita: formação acadêmica, certificações e idiomas -->
           <div class="info-block">
             <h3 class="info-label" style="margin-bottom: 20px;">Formação Acadêmica</h3>
-            
+
             <div class="timeline" style="margin-bottom: 35px;">
               <div class="timeline-item">
                 <span class="timeline-marker"></span>
@@ -119,7 +91,7 @@
                 <h4 class="timeline-title">Análise e Desenvolvimento de Sistemas</h4>
                 <p class="timeline-institution">Centro Universitário Internacional (UNINTER)</p>
                 <p class="timeline-desc">
-                  Graduação tecnológica focada no ciclo de desenvolvimento de software, estrutura de dados, 
+                  Graduação tecnológica focada no ciclo de desenvolvimento de software, estrutura de dados,
                   bancos de dados relacionais e modernos conceitos de desenvolvimento frontend/backend.
                 </p>
               </div>
