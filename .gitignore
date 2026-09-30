@@ -2,6 +2,8 @@ entrega.html
 entrega.pdf
 documentacao.html
 *.pdf
+*.docx
 prints/
 .DS_Store
 temp_*.swift
+temp_*.py
