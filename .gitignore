@@ -1,5 +1,7 @@
 entrega.html
 entrega.pdf
+documentacao.html
 *.pdf
 prints/
 .DS_Store
+temp_*.swift
