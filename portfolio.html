@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio — Victor Hugo Oliveira</title>
-  <meta name="description" content="Projetos de desenvolvimento web e experimentos de software criados por Victor Hugo Costa Silva De Oliveira.">
+  <meta name="description" content="Projetos de desenvolvimento web, landing pages de alta conversão, sistemas corporativos e APIs backend criados por Victor Hugo Costa Silva De Oliveira.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23151515'/%3E%3Ctext x='50' y='68' font-family='Arial,Helvetica,sans-serif' font-size='50' font-weight='800' fill='white' text-anchor='middle'%3EVH%3C/text%3E%3C/svg%3E">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Portfólio — Victor Hugo Oliveira">
-  <meta property="og:description" content="Projetos de desenvolvimento web e experimentos de software criados por Victor Hugo Costa Silva De Oliveira.">
+  <meta property="og:description" content="Projetos de desenvolvimento web, landing pages de alta conversão, sistemas corporativos e APIs backend criados por Victor Hugo Costa Silva De Oliveira.">
   <meta property="og:url" content="https://victor1308code.github.io/portifolio-victor-oliveira/portfolio.html">
   <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,25 +37,124 @@
 
     <main class="main-content">
       <section id="portfolio">
-        <h2 class="section-title">Portfólio</h2>
+        <h2 class="section-title">Portfólio de Projetos</h2>
 
         <div class="intro-text" style="margin-bottom: 30px;">
           <p>
-            Uma amostra dos meus projetos de desenvolvimento de software.
-            Utilizo ferramentas modernas como Angular e Java, focando em arquitetura organizada
-            e usabilidade responsiva.
+            Seleção de projetos práticos desenvolvidos com foco em arquitetura limpa, performance,
+            experiência do usuário (UI/UX) e resolução de problemas reais no Frontend e no Backend.
           </p>
         </div>
 
-        <!-- Cada card de projeto linka para o repositório real no GitHub -->
         <div class="portfolio-grid">
+          <!-- Projeto 1: Vértice Contabilidade (Rebranded from Efycaz) -->
+          <article class="portfolio-card">
+            <div class="portfolio-preview">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="14" y="18" width="72" height="64" rx="4" fill="currentColor" fill-opacity="0.08"/>
+                <line x1="14" y1="30" x2="86" y2="30"/>
+                <circle cx="22" cy="24" r="1.5" fill="currentColor"/>
+                <circle cx="28" cy="24" r="1.5" fill="currentColor"/>
+                <circle cx="34" cy="24" r="1.5" fill="currentColor"/>
+                <path d="M26 66 L42 48 L54 56 L72 38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="62 38 72 38 72 48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="26" y="70" width="48" height="4" rx="1" fill="currentColor" fill-opacity="0.25" stroke="none"/>
+              </svg>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title-wrapper">
+                <h3 class="portfolio-title">Vértice Contabilidade</h3>
+                <span class="portfolio-year">2026</span>
+              </div>
+              <p class="portfolio-desc">
+                Landing page institucional de alta conversão desenvolvida para escritório de assessoria contábil e tributária.
+                Conta com design system autoral, animações vetoriais fluidas, matriz comparativa, carrossel de depoimentos, FAQ interativo e SEO otimizado.
+              </p>
+              <div class="portfolio-tech tag-container">
+                <span class="tag-pill">Next.js 14</span>
+                <span class="tag-pill">React</span>
+                <span class="tag-pill">TypeScript</span>
+                <span class="tag-pill">Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="portfolio-actions">
+              <a href="https://github.com/victor1308code/vertice-contabilidade" target="_blank" rel="noopener" class="portfolio-btn">Código</a>
+              <a href="https://victor1308code.github.io/vertice-contabilidade/" target="_blank" rel="noopener" class="portfolio-btn portfolio-btn-primary">Ver Site Online &nearr;</a>
+            </div>
+          </article>
+
+          <!-- Projeto 2: Raízes do Nordeste Backend -->
+          <article class="portfolio-card">
+            <div class="portfolio-preview">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="42" cy="42" r="20" fill="currentColor" fill-opacity="0.1"/>
+                <circle cx="58" cy="42" r="20" fill="currentColor" fill-opacity="0.18"/>
+                <circle cx="50" cy="58" r="20" fill="currentColor" fill-opacity="0.25"/>
+              </svg>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title-wrapper">
+                <h3 class="portfolio-title">Raízes do Nordeste — API</h3>
+                <span class="portfolio-year">2026</span>
+              </div>
+              <p class="portfolio-desc">
+                API RESTful completa desenvolvida com Java e Spring Boot. Implementa autenticação e autorização via JWT e Spring Security,
+                persistência com Spring Data JPA / PostgreSQL, migrações estruturadas e documentação interativa com OpenAPI / Swagger.
+              </p>
+              <div class="portfolio-tech tag-container">
+                <span class="tag-pill">Java</span>
+                <span class="tag-pill">Spring Boot</span>
+                <span class="tag-pill">Spring Security / JWT</span>
+                <span class="tag-pill">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="portfolio-actions">
+              <a href="https://github.com/victor1308code/raizes-do-nordeste-backend" target="_blank" rel="noopener" class="portfolio-btn">Repositório no GitHub &nearr;</a>
+            </div>
+          </article>
+
+          <!-- Projeto 3: Sistema de Agendamento para Barbearia -->
+          <article class="portfolio-card">
+            <div class="portfolio-preview">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="22" y="22" width="56" height="56" rx="6" fill="currentColor" fill-opacity="0.1"/>
+                <line x1="22" y1="36" x2="78" y2="36"/>
+                <line x1="36" y1="16" x2="36" y2="26" stroke-width="3" stroke-linecap="round"/>
+                <line x1="64" y1="16" x2="64" y2="26" stroke-width="3" stroke-linecap="round"/>
+                <rect x="32" y="45" width="12" height="10" rx="2" fill="currentColor" fill-opacity="0.25"/>
+                <rect x="52" y="45" width="16" height="10" rx="2" fill="currentColor" fill-opacity="0.4"/>
+                <rect x="32" y="60" width="20" height="8" rx="2" fill="currentColor" fill-opacity="0.2"/>
+              </svg>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title-wrapper">
+                <h3 class="portfolio-title">Sistema de Agendamento (Barbearia)</h3>
+                <span class="portfolio-year">2024</span>
+              </div>
+              <p class="portfolio-desc">
+                Aplicação web responsiva desenvolvida como projeto freelancer para gestão de horários, seleção de serviços e agendamento online de clientes,
+                priorizando usabilidade mobile e fluidez no fluxo de reserva.
+              </p>
+              <div class="portfolio-tech tag-container">
+                <span class="tag-pill">Angular</span>
+                <span class="tag-pill">TypeScript</span>
+                <span class="tag-pill">UI/UX Responsivo</span>
+                <span class="tag-pill">Frontend</span>
+              </div>
+            </div>
+            <div class="portfolio-actions">
+              <a href="contato.html" class="portfolio-btn">Solicitar Demonstração</a>
+            </div>
+          </article>
+
+          <!-- Projeto 4: Trabalho Backend — API de Tarefas -->
           <article class="portfolio-card">
             <div class="portfolio-preview">
               <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <rect x="25" y="20" width="50" height="15" rx="2" fill="currentColor" fill-opacity="0.1"/>
                 <rect x="25" y="42" width="50" height="15" rx="2" fill="currentColor" fill-opacity="0.2"/>
                 <rect x="25" y="65" width="50" height="15" rx="2" fill="currentColor" fill-opacity="0.3"/>
-                <circle cx="35" cy="275" r="2" transform="translate(0, -247)" fill="currentColor"/>
+                <circle cx="35" cy="28" r="2" fill="currentColor"/>
                 <circle cx="35" cy="49" r="2" fill="currentColor"/>
                 <circle cx="35" cy="72" r="2" fill="currentColor"/>
                 <line x1="45" y1="27" x2="68" y2="27" stroke-dasharray="2 1"/>
@@ -65,58 +164,28 @@
             </div>
             <div class="portfolio-info">
               <div class="portfolio-title-wrapper">
-                <h3 class="portfolio-title">trabalho-backend</h3>
+                <h3 class="portfolio-title">API de Controle de Tarefas</h3>
                 <span class="portfolio-year">2025</span>
               </div>
               <p class="portfolio-desc">
-                Repositório oficial contendo o trabalho de Desenvolvimento Web Backend. Implementação de uma API de controle de
-                tarefas robusta utilizando linguagem Java.
+                Implementação de uma API REST para gerenciamento de tarefas desenvolvida em Java, aplicando boas práticas de orientação a objetos,
+                arquitetura em camadas e persistência em banco de dados relacional.
               </p>
               <div class="portfolio-tech tag-container">
                 <span class="tag-pill">Java</span>
-                <span class="tag-pill">Backend</span>
-                <span class="tag-pill">JDBC</span>
+                <span class="tag-pill">Spring / REST</span>
+                <span class="tag-pill">JDBC / SQL</span>
               </div>
             </div>
             <div class="portfolio-actions">
-              <a href="https://github.com/victor1308code/trabalho-backend" target="_blank" rel="noopener" class="portfolio-btn">Código</a>
-              <span class="portfolio-btn" style="opacity: 0.5; cursor: not-allowed;">Demo</span>
-            </div>
-          </article>
-
-          <article class="portfolio-card">
-            <div class="portfolio-preview">
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="42" cy="42" r="22" fill="currentColor" fill-opacity="0.1"/>
-                <circle cx="58" cy="42" r="22" fill="currentColor" fill-opacity="0.2"/>
-                <circle cx="50" cy="58" r="22" fill="currentColor" fill-opacity="0.3"/>
-              </svg>
-            </div>
-            <div class="portfolio-info">
-              <div class="portfolio-title-wrapper">
-                <h3 class="portfolio-title">raizes-do-nordeste-backend</h3>
-                <span class="portfolio-year">2026</span>
-              </div>
-              <p class="portfolio-desc">
-                Camada de backend desenvolvida para o projeto Raízes do Nordeste. Estruturação das rotas de serviço e regras de
-                negócio utilizando linguagem Java e dependências Maven.
-              </p>
-              <div class="portfolio-tech tag-container">
-                <span class="tag-pill">Java</span>
-                <span class="tag-pill">Maven</span>
-                <span class="tag-pill">Backend</span>
-              </div>
-            </div>
-            <div class="portfolio-actions">
-              <a href="https://github.com/victor1308code/raizes-do-nordeste-backend" target="_blank" rel="noopener" class="portfolio-btn">Código</a>
-              <span class="portfolio-btn" style="opacity: 0.5; cursor: not-allowed;">Demo</span>
+              <a href="https://github.com/victor1308code/trabalho-backend" target="_blank" rel="noopener" class="portfolio-btn">Repositório no GitHub &nearr;</a>
             </div>
           </article>
         </div>
       </section>
 
       <footer class="site-footer">
-        <p>&copy; 2026 Victor Hugo. Feito com HTML, CSS e JS puros.</p>
+        <p>&copy; 2026 Victor Hugo Costa Silva De Oliveira. Todos os direitos reservados.</p>
       </footer>
     </main>
   </div>

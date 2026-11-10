@@ -14,8 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let isFormValid = true;
 
+    const nameValue = nameInputField.value.trim();
+    const emailValueString = emailInputField.value.trim();
+    const messageValue = messageInputField.value.trim();
+
     // Nome: obrigatório
-    if (nameInputField.value.trim() === '') {
+    if (nameValue === '') {
       applyInputError(nameInputField, 'Por favor, insira o seu nome.');
       isFormValid = false;
     } else {
@@ -23,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // E-mail: obrigatório e precisa ter formato usuario@dominio.com
-    const emailValueString = emailInputField.value.trim();
     if (emailValueString === '') {
       applyInputError(emailInputField, 'Por favor, insira o seu e-mail.');
       isFormValid = false;
@@ -35,15 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Mensagem: obrigatória
-    if (messageInputField.value.trim() === '') {
+    if (messageValue === '') {
       applyInputError(messageInputField, 'Por favor, digite sua mensagem.');
       isFormValid = false;
     } else {
       clearInputError(messageInputField);
     }
 
-    // Só simula o envio (limpa os campos e mostra o modal de sucesso) se tudo estiver válido
     if (isFormValid) {
+      const subject = encodeURIComponent(`Contato via Portfólio — ${nameValue}`);
+      const body = encodeURIComponent(`Nome: ${nameValue}\nE-mail: ${emailValueString}\n\nMensagem:\n${messageValue}`);
+      window.location.href = `mailto:victor1308pro@gmail.com?subject=${subject}&body=${body}`;
+
       nameInputField.value = '';
       emailInputField.value = '';
       messageInputField.value = '';

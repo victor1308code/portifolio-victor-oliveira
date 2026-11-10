@@ -10,7 +10,7 @@
 
   var navItems = [
     { key: 'sobre', label: 'Sobre mim', href: 'index.html' },
-    { key: 'formacao', label: 'Formação', href: 'formacao.html' },
+    { key: 'formacao', label: 'Formação & Carreira', href: 'formacao.html' },
     { key: 'portfolio', label: 'Portfólio', href: 'portfolio.html' },
     { key: 'contato', label: 'Contato', href: 'contato.html' }
   ];
@@ -27,7 +27,7 @@
     '<header class="site-header">' +
       '<div class="header-top">' +
         '<h1 class="site-title">Victor Hugo</h1>' +
-        '<p class="site-subtitle">Assessor de TIC &amp; Estudante de ADS</p>' +
+        '<p class="site-subtitle">Assessor de TIC &bull; Desenvolvedor Web &amp; Backend</p>' +
         '<nav class="nav-menu" aria-label="Navegação principal"><ul class="nav-list">' + navHTML + '</ul></nav>' +
       '</div>' +
       '<div class="style-controls">' +

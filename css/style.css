@@ -588,6 +588,17 @@ button, input, textarea {
   color: var(--c-bg);
 }
 
+.portfolio-btn-primary {
+  font-weight: 800;
+}
+
+.action-buttons-row {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 /* Formulário de Contato */
 .contact-form {
   display: flex;
